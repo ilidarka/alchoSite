@@ -382,14 +382,10 @@ header{
     background-image: url(../img/main-page-woman-adaptive.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center;  */
+   
     
 }
 /* benefits */
-.benefits {
-}
-.benefits_wrapper {
-}
 .benefits_title {
     max-width: 750px;
     margin-bottom: 25px;
@@ -426,19 +422,18 @@ header{
     line-height: 26px;
 }
 /* consult */
-.consult {
-}
+
 .consult_wrapper {
     margin-top: 200px;
     margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+
     background-color:  #1992F8;
     box-shadow: 0px 15px 40px rgba(0, 148, 236, 0.14);
     border-radius: 25px;
     gap: 10px;
-    /* padding: 60px; */
+ 
 }
 
 .consult_left_container h1{
@@ -447,13 +442,11 @@ header{
 }
 .consult_left_container p{
     color: #FFFFFF;
-    /* margin-bottom: 30px; */
 }
 .consult_input_container{
     margin-top: 30px;
     color: rgba(0, 0, 0, 0.56);
     display: flex;
-    /* flex-wrap: wrap; */
     gap: 20px;
     margin-bottom: 20px;
     justify-content: space-between;
@@ -502,8 +495,6 @@ header{
 .price {
     margin-bottom: 60px;
 }
-.price_wrapper {
-}
 .price_wrapper h2{
     text-transform: uppercase;
 }
@@ -537,7 +528,7 @@ header{
 .license_oform {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 200px;
+    margin-bottom: 80px;
 }
 .license_oform_item {
     max-width: 560px;
@@ -625,8 +616,6 @@ header{
     margin-bottom: 25px;
     font-size: 37px;
 }
-.about_company {
-}
 .about_company_title{
     margin-bottom: 30px;
 }
@@ -654,8 +643,6 @@ header{
 .about_left_container p{
     margin-bottom: 20px;
     color: #54595F;
-}
-.about_right_container {
 }
 .center_img_container{
     display: flex;
@@ -709,9 +696,6 @@ header{
 }
 .number{
     gap: 16px;
-}
-.e-mail{
-
 }
 .time{
     gap: 12px;
@@ -814,8 +798,6 @@ footer{
 .d-flex {
     display: flex;
     max-width: 1000px;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
     margin: 0 auto;
 }
 .dropdowns{
@@ -824,13 +806,11 @@ footer{
 
 }
 .dropdown__ {
-    /* position: relative; */
     margin: 0 auto;
     cursor: pointer;
     width: 90%;
     margin-bottom: 70px;
     background: #F7FBFE;
-
     box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.05);
     border-radius: 15px
 
@@ -838,7 +818,6 @@ footer{
 
 .dropdown__ .head {
     padding: 23px 40px 24px 23px;
-    
     box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.05);
     border-radius: 15px;
     font-weight: 400;
@@ -859,11 +838,6 @@ footer{
 .hidden{
     display: none;
 }
-.head img{
-    
-}
-
-
 .dropdown__list__ {
     box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.05);
     background: #F7FBFE;
@@ -877,7 +851,6 @@ footer{
     padding: 0 0px 24px 30px;
     border-radius: 15px;
     border-radius: 15px;
-    
 }
 .dropdown_content{
     max-width: 1000px;
