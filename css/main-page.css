@@ -129,12 +129,12 @@ header{
 	top: calc(50% + 5px);
 }
 .burger-menu {
-    border-radius: 0 0 15px 0;
+    border-radius: 0 0 100px 0;
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 40%;
-	height: 30%;
+	width: 50%;
+	height: 40%;
 	padding: 15px;
     background: #0094EC;
 	transform: translateX(-100%);
@@ -146,10 +146,14 @@ header{
 .burger-menu.active {
 	transform: translateX(0%);
 }
+.burger-menu-links li{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
 .burger-menu-links li a{
+    font-size: 20px;
 	list-style-type: none;
     color: #FFFFFF;
-    font-size: 16px;
     font-weight: 400;
     line-height: 28px;
     margin-bottom: 20px;
@@ -836,7 +840,9 @@ footer{
     list-style: disc;
     padding-left: 5px;
 }
-
+.dropdown_text_active{
+    color: #0094EC;
+}
 
 
 
