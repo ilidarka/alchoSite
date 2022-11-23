@@ -18,21 +18,9 @@ if (allDropdowns) {
 
         dropdown.addEventListener('click', () => {
             allDropdowns.forEach(dropdown2 => {
-                if (dropdown2.classList.contains('active') && dropdown !== dropdown2) {
-                    dropdown2.classList.remove('active')
-                    let dropdownList2 = dropdown2.querySelector('.dropdown__list__')
-                    dropdownList2.style.height = `0px`;
-                    dropdownList2.style.padding = '0px'
-                    let compStyle = window.getComputedStyle(dropdownList2)
-                    let currentTransition = compStyle.getPropertyValue(
-                        'transition-duration')
-                    setTimeout(() => {
-                        dropdownList2.style.display = 'none'
-                    }, currentTransition.slice(0, -1) * 1000)
-                }
+               
                 minus.classList.add('hidden')
                 plus.classList.remove('hidden')
-                
           
 
                 
@@ -41,18 +29,20 @@ if (allDropdowns) {
                 dropdown.classList.remove('active')
                 dropdownList.style.height = `0px`;
                 dropdownList.style.padding = '0px'
-
+                minus.classList.add('hidden')
+                plus.classList.remove('hidden')
                 let compStyle = window.getComputedStyle(dropdownList)
                 let currentTransition = compStyle.getPropertyValue('transition-duration')
                 setTimeout(() => {
                     dropdownList.style.display = 'none'
                 }, currentTransition.slice(0, -1) * 1000)
-            } else if (!dropdown.classList.contains('active')) {
+            } 
+            else if (!dropdown.classList.contains('active')) {
                 dropdown.classList.add('active')
                 dropdownList.style.display = 'flex';
                 minus.classList.remove('hidden')
                 plus.classList.add('hidden')
-
+                
                 setTimeout(() => {
                     dropdownList.style.height = `${dropdownListHeight}px`;
                     dropdownList.style.padding = `${dropdownListPadding}`;
@@ -64,8 +54,7 @@ if (allDropdowns) {
         document.addEventListener('click', (e) => {
             if (!e.target.closest('.dropdown__')) {
                 allDropdowns.forEach(dropdown2 => {
-                    minus.classList.remove('hidden')
-                    dropdown2.classList.remove('active')
+                    
                     let dropdownList2 = dropdown2.querySelector('.dropdown__list__')
                     dropdownList2.style.height = `0px`;
                     dropdownList2.style.padding = '0px'

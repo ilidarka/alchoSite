@@ -149,7 +149,6 @@
 }
 
 @media screen and (max-width: 456px) {
-    
     .popup{
         padding-bottom: 40px;
     }
@@ -164,7 +163,8 @@
         height: 400px;
         margin-top: 20px;
     }
-    .slider_title{
+    .slider_title h1{
+        font-size: 35px;
         text-align: left;
         margin: 0;
     }
