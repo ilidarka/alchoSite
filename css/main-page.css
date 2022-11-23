@@ -14,6 +14,28 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+.hover-underline-animation {
+    position: relative;
+    color: #0087ca;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
 @font-face {
     font-family: "Mont", sans-serif;
@@ -40,13 +62,13 @@ button:focus{
     background: rgba(25, 146, 248, 0.8);
 }
  h1{
-    font-weight: 700;
+    font-weight: 600;
     font-size: 40px;
     line-height: 52px;
     color: #54595F;
 }
 h2{
-    font-weight: 700;
+    font-weight: 600;
     font-size: 18px;
     color: #1992F8;
     line-height: 23px;
@@ -56,7 +78,7 @@ h2{
     color: #0094EC;
 }
 p{
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
     line-height: 26px;
 }
@@ -66,6 +88,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.header_logo img{
+    width: 250px;
+   
+    
 }
 .container{
     max-width: 1170px;
@@ -81,14 +108,22 @@ header{
 }
 .menu a{
     color: black;
+    padding-bottom: 10px;
     
 }
-.header_contacts a{
-   font-weight: 400;
-   font-size: 12px;
-    font-weight: 700;
-   color: #1992F8;
+.consult_left_container {
+    padding: 60px 0 40px 60px;
+    max-width: 650px;
 }
+.header_contacts a{
+    font-weight: 600;
+   font-size: 12px;
+    font-weight: 400;
+   color: #1992F8;
+   padding-bottom: 2px;
+
+}
+
 .contacts_number {
     display: flex;
     align-items: center;
@@ -217,7 +252,7 @@ header{
     gap: 10px;
 }
 .left_container_about a{
-    font-weight: 600;
+    font-weight: 400;
     font-size: 20px;
     line-height: 26px;
     color: #1992F8;
@@ -238,12 +273,12 @@ header{
     margin-bottom: 20px;
 }
 .right_container_title p{
-    font-weight: 700;
+    font-weight: 600;
     font-size: 24px;
     line-height: 33px;
 }
 .left_container_title p{
-    font-weight: 700;
+    font-weight: 400;
     font-size: 60px;
     line-height: 77px;
 }
@@ -264,7 +299,7 @@ header{
 }
 .right_container_button {
     padding: 12px 18px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 14px;
     line-height: 26px;
     color: #ffff;
@@ -277,7 +312,6 @@ header{
 }
 .popup{
     border-radius: 25px;
-    padding-right: 60px;
     background-color: rgba(0,0,0,0.5);
     top:0px;
     background-color:  #1992F8;
@@ -288,6 +322,9 @@ header{
     transition: 0.5s all;
     text-align: center;
     max-width: 490px;
+}
+.consult_popup{
+    padding-right: 60px;
 }
 .checkbox_container p{
     text-align: left;
@@ -311,6 +348,22 @@ header{
 .popup.active { 
     transform: translate(-50%, -50%) scale(1);
     transition: 0.5s all;
+}
+.checked_container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 40px 100px 40px;
+    max-width: 406px;
+}
+.checked_container img{
+    max-width: 106px;
+    max-height: 99px;
+    margin-bottom: 30px;
+}
+.checked_container p{
+    color: #FFFFFF;
 }
 
 .image{
@@ -359,14 +412,14 @@ header{
 .item_right_container{
     color: #54595F;
 }
-.item_title{
+.item_title p{
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 20px;
 }
 .item_text{
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
     line-height: 26px;
 }
@@ -385,10 +438,7 @@ header{
     gap: 10px;
     /* padding: 60px; */
 }
-.consult_left_container {
-    padding: 60px 0 40px 60px;
-    max-width: 650px;
-}
+
 .consult_left_container h1{
     color: #FFFFFF;
     margin-bottom: 20px;
@@ -401,7 +451,7 @@ header{
     margin-top: 30px;
     color: rgba(0, 0, 0, 0.56);
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 20px;
     margin-bottom: 20px;
     justify-content: space-between;
@@ -419,7 +469,7 @@ header{
 .consult_left_container button{
     color: #FFFFFF;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 26px;
     text-transform: uppercase;
     padding-top: 12px;
@@ -502,7 +552,7 @@ header{
     border: 1px solid #FFFFFF;
     box-shadow: 0px 5px 40px rgba(0, 148, 236, 0.25);
     border-radius: 25px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 14px;
     line-height: 26px;
     text-align: center;
@@ -526,6 +576,9 @@ header{
     border-radius: 15px 15px 0px 0px;
 }
 .oform_item_text{
+    font-size: 18px;
+    line-height: 26px;
+    color: #54595F;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -533,16 +586,9 @@ header{
     background-color: #FFFFFF;
     border-radius: 0 0 15px 15px;
 }
-.oform_item_text{
-    font-size: 18px;
-    line-height: 26px;
-    /* text-align: center; */
-    color: #54595F;
-    font-weight: 600;
-    border-radius: 0 0 15px 15px;
-}
+
 .oform_item_text span{
-    font-weight: 800;
+    font-weight: 600;
     color: #54595F;
 }
 .srok{
@@ -597,7 +643,7 @@ header{
     max-width: 580px;
 }
 .about_left_container h3{
-    font-weight: 700;
+    font-weight: 600;
     font-size: 20px;
     line-height: 28px;
     color: #54595F;
@@ -707,6 +753,7 @@ footer{
 }
 .links_container_item a{
     color: rgba(255, 255, 255, 0.9);
+    padding-bottom: 2px;
 }
 .contacts_item {
     display: flex;
@@ -783,7 +830,7 @@ footer{
     background: #FFFFFF;
     box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.05);
     border-radius: 15px;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 20px;
     line-height: 28px;
     width: 100%;

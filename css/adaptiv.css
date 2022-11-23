@@ -47,6 +47,10 @@
         align-items: center;
         justify-content: center;
         margin: 0 auto;
+        margin-top: -100px;
+    }
+    .license_oform{
+        margin-bottom: 100px;
     }
     .consult_wrapper{
         max-width: 600px;
@@ -146,6 +150,9 @@
     .about_company_title{
         text-align: center;
     }
+    .consult_input_container{
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 456px) {
@@ -167,6 +174,9 @@
         font-size: 35px;
         text-align: left;
         margin: 0;
+    }
+    .license_oform{
+        margin-bottom: 50px;
     }
     
 }
