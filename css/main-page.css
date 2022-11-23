@@ -21,7 +21,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 body{
     font-family: 'Mont', sans-serif;
-    background-image: url("./img/main_background.png");
+    background-image: url("../img/main_background.png");
     background-repeat: no-repeat;
     background-size:cover;
     
@@ -313,14 +313,14 @@ header{
     width: 100%;
     height: 500px;
     margin-bottom: 100px;
-    background-image: url("./img/main-page-img.jpg"); 
+    background-image: url("../img/main-page-img.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
      background-position: center;
 }
 .image-adaptiv{
     margin-top: 40px;
-    background-image: url("./img/main-page-woman-adaptive.jpg"); 
+    background-image: url("../img/main-page-woman-adaptive.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
     /* background-position: center;  */
