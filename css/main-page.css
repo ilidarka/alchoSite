@@ -88,6 +88,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow-y:hidden;
 }
 .header_logo img{
     width: 250px;
@@ -97,7 +98,8 @@ header{
 .container{
     max-width: 1170px;
     margin: 0 auto;
-    z-index: -1;
+    overflow-x: hidden; 
+    
     
 }
 .menu{
@@ -748,6 +750,9 @@ footer{
     display: flex;
     gap: 30px;
 }
+.footer_rights_links_container a{
+    padding-bottom:5px;
+}
 .links_container_item li{
     margin-bottom: 10px;
 }
@@ -815,19 +820,25 @@ footer{
 }
 .dropdowns{
     margin-top: 100px;
+    
+
 }
 .dropdown__ {
     /* position: relative; */
+    margin: 0 auto;
     cursor: pointer;
-    width: 100%;
+    width: 90%;
     margin-bottom: 70px;
+    background: #F7FBFE;
+
     box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 15px
 
 }
 
 .dropdown__ .head {
     padding: 23px 40px 24px 23px;
-    background: #FFFFFF;
+    
     box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.05);
     border-radius: 15px;
     font-weight: 400;
@@ -854,19 +865,17 @@ footer{
 
 
 .dropdown__list__ {
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.05);
+    background: #F7FBFE;
     color: #54595F;
     font-weight: 400;
     max-width: 1170px;
-    /* position: inherit; */
     display: flex;
     flex-direction: column;
-    /* top: calc(100% + 10px); */
-    background-color: #FFFFFF;
     transition: all 0.2s ;
-    margin-top: -10px;
+    margin-top: -20px;
     padding: 0 0px 24px 30px;
     border-radius: 15px;
-    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.05);
     border-radius: 15px;
     
 }
